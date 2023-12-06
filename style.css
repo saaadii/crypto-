@@ -383,7 +383,127 @@ a{
     font-size: calc(14px + 2 * (100vw - 320px) / 1600);
     color: #afacad;
 }
+.forrcore{
+    background-color:#151b28; 
+}
 
+.lotsoficon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    justify-items: center;
+}
+.foricon{
+    text-align: center;
+    margin-top: 20px;
+}
+.foricon h3{
+    margin-top: 10px;
+    font-size: calc(18px + 6 * (100vw - 320px) / 1600);
+}
+.foricon:hover{
+    color: #3bedb2;
+}
+ .foricon img{
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  height: 52px;
+  width: 52px;    
+}
+
+ .firstdivforbg{
+    background-color:black;
+    padding: 13px;
+    border-radius: 50%;
+
+} 
+
+.foriconseconddiv{
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px dashed #3bedb2;
+    
+}
+.foriconseconddiv:hover{
+    border: 1px solid #3bedb2;
+    background-color: #3bedb21a;   
+}
+.coreheaderandp h3{
+    font-size: calc(20px + 20 * (100vw - 320px) / 1600);
+    color: #3bedb2;
+    padding-top: 40px;
+    position: relative;
+    font-weight: 600;
+}
+.coreheaderandp p{
+    font-size: calc(18px + 2 * (100vw - 320px) / 1600) ;
+    color: #afacad;
+}
+.coreheaderandp h3::after{
+    content: "";
+    height: 2.5px;
+    width: 35px;
+    background-color: #3bedb2;
+    position: absolute;
+    top: 78%;
+    margin-left: 8px;   
+}
+.forfooterbg{
+    background-color: #151b28;
+}
+.footer{
+    border-top: #3bedb2 2px solid;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background: url(images/footer-bg.jpg);
+    background-position: contain;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footerimg img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+    border: 1px solid #3bedb2;
+    
+    padding: 10px 15px;
+    background-color: #3bedb20a;
+    border-radius: 50%;
+}
+.footerimg{ 
+    margin-top: 50px;
+}
+
+.footer h3{
+    color: white;
+    font-size:calc(22px + 13 * (100vw - 320px) / 1600) ;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.footer button{
+    display: flex;
+    background-color: #3bedb2;
+    font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+    align-items: center;
+    gap: 13px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.footer button:hover{
+    transition: 1s ;
+    color: white;
+    border: 1px solid #3bedb2;
+    background-color: black;
+}
 
 
 @media (max-width:1500px){
@@ -393,6 +513,17 @@ a{
 }
 
 @media (max-width:995px){
+    .lotsoficon{
+        background-color:#151b28;
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        vertical-align: middle;
+        align-items: center;
+        margin: 0 auto;
+        color: white;
+        justify-items: center;
+    }
     .vanishat1kpx{
         display: none;
     }
@@ -460,13 +591,15 @@ a{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         gap: 0;
         flex-direction: column;
         background-color: #3bedb2;
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        z-index: 10;
+
     }
     .nav-item{
      margin: 16px 0;   
@@ -494,8 +627,20 @@ a{
     .herofirst{
         margin-top: 15%;
     }
+   
 }
 @media (max-width:555px){
+    .lotsoficon{
+        background-color:#151b28;
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        vertical-align: middle;
+        align-items: center;
+        margin: 0 auto;
+        color: white;
+        justify-items: center;
+    }
 
     .img1{ 
         margin-left: 10%;
